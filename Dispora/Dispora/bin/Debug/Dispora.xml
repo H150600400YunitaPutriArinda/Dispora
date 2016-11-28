@@ -18,6 +18,10 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:Db_Dispora.db_disporaDataSet.event_kejuaraan_has_cabang_olahragaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:Db_Dispora.db_disporaDataSet.keuanganDataTable">
 	<summary>
 Represents the strongly named DataTable class.
@@ -38,6 +42,10 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:Db_Dispora.db_disporaDataSet.event_kejuaraan_has_cabang_olahragaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:Db_Dispora.db_disporaDataSet.keuanganRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -55,6 +63,10 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:Db_Dispora.db_disporaDataSet.event_kejuaraanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Db_Dispora.db_disporaDataSet.event_kejuaraan_has_cabang_olahragaRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -79,6 +91,10 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:Db_Dispora.db_disporaDataSetTableAdapters.event_kejuaraanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Db_Dispora.db_disporaDataSetTableAdapters.event_kejuaraan_has_cabang_olahragaTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
