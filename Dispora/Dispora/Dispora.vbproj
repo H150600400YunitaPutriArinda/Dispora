@@ -83,11 +83,6 @@
     <Compile Include="BerandaDispora.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="db_disporaDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>db_disporaDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Keuangan.Designer.vb">
       <DependentUpon>Keuangan.vb</DependentUpon>
     </Compile>
@@ -136,17 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="db_disporaDataSet.xsc">
-      <DependentUpon>db_disporaDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="db_disporaDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>db_disporaDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="db_disporaDataSet.xss">
-      <DependentUpon>db_disporaDataSet.xsd</DependentUpon>
-    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
