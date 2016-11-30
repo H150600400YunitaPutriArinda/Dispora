@@ -72,6 +72,18 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BerandaDispora.Designer.vb">
+      <DependentUpon>BerandaDispora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BerandaDispora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keuangan.Designer.vb">
+      <DependentUpon>Keuangan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Keuangan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LoginDispora.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +108,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BerandaDispora.resx">
+      <DependentUpon>BerandaDispora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keuangan.resx">
+      <DependentUpon>Keuangan.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginDispora.resx">
       <DependentUpon>LoginDispora.vb</DependentUpon>
     </EmbeddedResource>

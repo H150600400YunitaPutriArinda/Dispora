@@ -1,4 +1,4 @@
-﻿Public Class FormLogin
+﻿Public Class LoginDispora
 
     Private Sub FormLogin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
@@ -34,6 +34,5 @@
                 MsgBox("Login Not Succes", MsgBoxStyle.Critical)
             End If
         End If
-    End Sub
     End Sub
 End Class
