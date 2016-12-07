@@ -1,0 +1,12 @@
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.exe
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.pdb
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.xml
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.BerandaDispora.resources
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.Keuangan.resources
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.LoginDispora.resources
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.Resources.resources
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.vbproj.GenerateResource.Cache
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.exe
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.xml
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.pdb
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.exe.config

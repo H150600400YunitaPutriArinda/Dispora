@@ -35,4 +35,8 @@
             End If
         End If
     End Sub
+
+    Private Sub KeluarButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles KeluarButton.Click
+        End
+    End Sub
 End Class

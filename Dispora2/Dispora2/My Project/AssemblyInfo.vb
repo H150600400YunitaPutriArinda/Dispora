@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Dispora1")> 
+<Assembly: AssemblyTitle("Dispora2")> 
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("Dispora1")> 
+<Assembly: AssemblyProduct("Dispora2")> 
 <Assembly: AssemblyCopyright("Copyright ©  2016")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("a686dc85-fcf2-4a7d-9c37-52520ef948d6")> 
+<Assembly: Guid("db7ddef1-b301-4158-bd39-97fff59d5222")> 
 
 ' Version information for an assembly consists of the following four values:
 '
