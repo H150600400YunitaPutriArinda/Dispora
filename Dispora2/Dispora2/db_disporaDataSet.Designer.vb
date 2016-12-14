@@ -4013,13 +4013,28 @@ Namespace db_disporaDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
+            Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(1) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT `NIA`, `nama_atlet`, `TTL`, `asal_sekolah/PT`, `alamat`, `NO_HP`, `sekreta"& _ 
                 "riat_NIK`, `sekretariat_keuangan_id_keuangan`, `cabang_olahraga_id_olahraga` FRO"& _ 
                 "M `atlet`"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1) = New Global.MySql.Data.MySqlClient.MySqlCommand()
+            Me._commandCollection(1).Connection = Me.Connection
+            Me._commandCollection(1).CommandText = "SELECT `NIA`, `nama_atlet`, `TTL`, `asal_sekolah/PT`, `alamat`, `NO_HP`, `sekreta"& _ 
+                "riat_NIK`, `sekretariat_keuangan_id_keuangan`, `cabang_olahraga_id_olahraga` FRO"& _ 
+                "M `atlet`"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"where 'NIA' like @cari or 'nama_atlet' like @cari  or 'TTL' like @car"& _ 
+                "i or 'asal_sekolah/PT' like @cari or  `alamat` like @cari or  `NO_HP` like @cari"& _ 
+                " or  `sekretariat_NIK` like @cari or  `sekretariat_keuangan_id_keuangan`  like @"& _ 
+                "cari"
+            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
+            Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@cari"
+            param.Size = 1024
+            param.IsNullable = true
+            param.SourceColumn = ""
+            Me._commandCollection(1).Parameters.Add(param)
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -4041,6 +4056,40 @@ Namespace db_disporaDataSetTableAdapters
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
         Public Overloads Overridable Function GetData() As db_disporaDataSet.atletDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As db_disporaDataSet.atletDataTable = New db_disporaDataSet.atletDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function cariQuery(ByVal dataTable As db_disporaDataSet.atletDataTable, ByVal cari As String) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            If (cari Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("cari")
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(cari,String)
+            End If
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
+        Public Overloads Overridable Function GetDataBy(ByVal cari As String) As db_disporaDataSet.atletDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            If (cari Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("cari")
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(cari,String)
+            End If
             Dim dataTable As db_disporaDataSet.atletDataTable = New db_disporaDataSet.atletDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable

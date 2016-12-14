@@ -127,7 +127,11 @@
     <value>504, 31</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+<<<<<<< HEAD:Dispora2/Dispora2/BerandaDispora.resx
+    <value>28</value>
+=======
     <value>59</value>
+>>>>>>> a05d7c07165d8601b4bc78a18f1df9e77aeee63a:Dispora2/Dispora2/BerandaDispora.resx
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

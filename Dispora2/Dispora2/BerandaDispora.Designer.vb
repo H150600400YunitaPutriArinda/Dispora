@@ -99,7 +99,11 @@ Partial Class BerandaDispora
         Me.WelcomeLabel.BackColor = System.Drawing.Color.White
         Me.WelcomeLabel.Font = New System.Drawing.Font("Lucida Calligraphy", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.WelcomeLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+<<<<<<< HEAD:Dispora2/Dispora2/BerandaDispora.Designer.vb
+        Me.WelcomeLabel.Location = New System.Drawing.Point(136, 314)
+=======
         Me.WelcomeLabel.Location = New System.Drawing.Point(143, 208)
+>>>>>>> a05d7c07165d8601b4bc78a18f1df9e77aeee63a:Dispora2/Dispora2/BerandaDispora.Designer.vb
         Me.WelcomeLabel.Name = "WelcomeLabel"
         Me.WelcomeLabel.Size = New System.Drawing.Size(658, 31)
         Me.WelcomeLabel.TabIndex = 5
@@ -110,7 +114,11 @@ Partial Class BerandaDispora
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ServerDataToolStripMenuItem, Me.PROFILEToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
+<<<<<<< HEAD:Dispora2/Dispora2/BerandaDispora.Designer.vb
+        Me.MenuStrip1.Size = New System.Drawing.Size(878, 30)
+=======
         Me.MenuStrip1.Size = New System.Drawing.Size(955, 30)
+>>>>>>> a05d7c07165d8601b4bc78a18f1df9e77aeee63a:Dispora2/Dispora2/BerandaDispora.Designer.vb
         Me.MenuStrip1.TabIndex = 6
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -119,11 +127,15 @@ Partial Class BerandaDispora
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+<<<<<<< HEAD:Dispora2/Dispora2/BerandaDispora.Designer.vb
+        Me.ClientSize = New System.Drawing.Size(878, 467)
+=======
         Me.ClientSize = New System.Drawing.Size(955, 454)
+>>>>>>> a05d7c07165d8601b4bc78a18f1df9e77aeee63a:Dispora2/Dispora2/BerandaDispora.Designer.vb
         Me.Controls.Add(Me.WelcomeLabel)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "BerandaDispora"
-        Me.Text = "BERANDA DISPORA"
+        Me.Text = "BerandaDispora"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
