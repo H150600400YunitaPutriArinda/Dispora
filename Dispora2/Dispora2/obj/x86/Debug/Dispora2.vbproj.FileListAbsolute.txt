@@ -1,0 +1,16 @@
+C:\Users\Asus-PC\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.BerandaDispora.resources
+C:\Users\Asus-PC\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.Resources.resources
+C:\Users\Asus-PC\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.Sekretariat.resources
+C:\Users\Asus-PC\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.vbproj.GenerateResource.Cache
+C:\Users\Asus-PC\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.exe.config
+C:\Users\Asus-PC\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.exe
+C:\Users\Asus-PC\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.pdb
+C:\Users\Asus-PC\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.xml
+C:\Users\Asus-PC\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.exe
+C:\Users\Asus-PC\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.xml
+C:\Users\Asus-PC\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.pdb
+C:\Users\Asus-PC\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.FormBeranda.resources
+C:\Users\Asus-PC\Documents\Semester 3\Pemograman Visual 2\vb\Dispora2\Dispora2\bin\Debug\Dispora2.exe.config
+C:\Users\Asus-PC\Documents\Semester 3\Pemograman Visual 2\vb\Dispora2\Dispora2\obj\x86\Debug\Dispora2.exe
+C:\Users\Asus-PC\Documents\Semester 3\Pemograman Visual 2\vb\Dispora2\Dispora2\obj\x86\Debug\Dispora2.xml
+C:\Users\Asus-PC\Documents\Semester 3\Pemograman Visual 2\vb\Dispora2\Dispora2\obj\x86\Debug\Dispora2.pdb
