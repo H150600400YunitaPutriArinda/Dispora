@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{61171A56-0245-443C-88BD-1BEB5CD68954}</ProjectGuid>
+    <ProjectGuid>{6F6270E3-25A1-4A4A-A038-644775593473}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>Dispora2.My.MyApplication</StartupObject>
     <RootNamespace>Dispora2</RootNamespace>
@@ -77,16 +77,40 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Atlet.Designer.vb">
+      <DependentUpon>Atlet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atlet.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BerandaDispora.Designer.vb">
       <DependentUpon>BerandaDispora.vb</DependentUpon>
     </Compile>
     <Compile Include="BerandaDispora.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CabangOlahraga.Designer.vb">
+      <DependentUpon>CabangOlahraga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CabangOlahraga.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="db_disporaDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>db_disporaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EventKejuaraan.Designer.vb">
+      <DependentUpon>EventKejuaraan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventKejuaraan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keuangan.Designer.vb">
+      <DependentUpon>Keuangan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Keuangan.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginDispora.vb">
       <SubType>Form</SubType>
@@ -118,8 +142,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Atlet.resx">
+      <DependentUpon>Atlet.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BerandaDispora.resx">
       <DependentUpon>BerandaDispora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CabangOlahraga.resx">
+      <DependentUpon>CabangOlahraga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventKejuaraan.resx">
+      <DependentUpon>EventKejuaraan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keuangan.resx">
+      <DependentUpon>Keuangan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginDispora.resx">
       <DependentUpon>LoginDispora.vb</DependentUpon>
@@ -135,7 +171,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="app.config" />
     <None Include="db_disporaDataSet.xsc">
       <DependentUpon>db_disporaDataSet.xsd</DependentUpon>
     </None>

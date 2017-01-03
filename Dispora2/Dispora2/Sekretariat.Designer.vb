@@ -29,10 +29,32 @@ Partial Class Sekretariat
         Dim NO_HPLabel As System.Windows.Forms.Label
         Dim Keuangan_id_keuanganLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Sekretariat))
-        Me.SekretariatBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.batalButton = New System.Windows.Forms.Button()
+        Me.keluarButton = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.editButton = New System.Windows.Forms.Button()
+        Me.hapusButton = New System.Windows.Forms.Button()
+        Me.refreshButton = New System.Windows.Forms.Button()
+        Me.NIKTextBox = New System.Windows.Forms.TextBox()
         Me.SekretariatBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Db_disporaDataSet = New Dispora2.db_disporaDataSet()
+        Me.Nama_pegawaiTextBox = New System.Windows.Forms.TextBox()
+        Me.simpanButton = New System.Windows.Forms.Button()
+        Me.tambahButton = New System.Windows.Forms.Button()
+        Me.AlamatTextBox = New System.Windows.Forms.TextBox()
+        Me.NO_HPTextBox = New System.Windows.Forms.TextBox()
+        Me.Keuangan_id_keuanganTextBox = New System.Windows.Forms.TextBox()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cariButton = New System.Windows.Forms.Button()
+        Me.cariText = New System.Windows.Forms.TextBox()
+        Me.SekretariatTableAdapter = New Dispora2.db_disporaDataSetTableAdapters.sekretariatTableAdapter()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SekretariatDataGridView = New System.Windows.Forms.DataGridView()
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.SekretariatBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -44,40 +66,18 @@ Partial Class Sekretariat
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.SekretariatBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
-        Me.SekretariatDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.batalButton = New System.Windows.Forms.Button()
-        Me.keluarButton = New System.Windows.Forms.Button()
-        Me.editButton = New System.Windows.Forms.Button()
-        Me.hapusButton = New System.Windows.Forms.Button()
-        Me.refreshButton = New System.Windows.Forms.Button()
-        Me.NIKTextBox = New System.Windows.Forms.TextBox()
-        Me.Nama_pegawaiTextBox = New System.Windows.Forms.TextBox()
-        Me.simpanButton = New System.Windows.Forms.Button()
-        Me.tambahButton = New System.Windows.Forms.Button()
-        Me.AlamatTextBox = New System.Windows.Forms.TextBox()
-        Me.NO_HPTextBox = New System.Windows.Forms.TextBox()
-        Me.Keuangan_id_keuanganTextBox = New System.Windows.Forms.TextBox()
-        Me.cariText = New System.Windows.Forms.TextBox()
-        Me.cariButton = New System.Windows.Forms.Button()
-        Me.SekretariatTableAdapter = New Dispora2.db_disporaDataSetTableAdapters.sekretariatTableAdapter()
         Me.TableAdapterManager = New Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager()
         NIKLabel = New System.Windows.Forms.Label()
         Nama_pegawaiLabel = New System.Windows.Forms.Label()
         AlamatLabel = New System.Windows.Forms.Label()
         NO_HPLabel = New System.Windows.Forms.Label()
         Keuangan_id_keuanganLabel = New System.Windows.Forms.Label()
-        CType(Me.SekretariatBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SekretariatBindingNavigator.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.SekretariatBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Db_disporaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SekretariatDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
+        CType(Me.SekretariatBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SekretariatBindingNavigator.SuspendLayout()
         Me.SuspendLayout()
         '
         'NIKLabel
@@ -130,6 +130,221 @@ Partial Class Sekretariat
         Keuangan_id_keuanganLabel.TabIndex = 8
         Keuangan_id_keuanganLabel.Text = "keuangan id keuangan:"
         '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "alamat"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "alamat"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'batalButton
+        '
+        Me.batalButton.Location = New System.Drawing.Point(112, 249)
+        Me.batalButton.Name = "batalButton"
+        Me.batalButton.Size = New System.Drawing.Size(75, 23)
+        Me.batalButton.TabIndex = 24
+        Me.batalButton.Text = "BATAL"
+        Me.batalButton.UseVisualStyleBackColor = True
+        '
+        'keluarButton
+        '
+        Me.keluarButton.Location = New System.Drawing.Point(212, 210)
+        Me.keluarButton.Name = "keluarButton"
+        Me.keluarButton.Size = New System.Drawing.Size(75, 23)
+        Me.keluarButton.TabIndex = 23
+        Me.keluarButton.Text = "KELUAR"
+        Me.keluarButton.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.batalButton)
+        Me.GroupBox1.Controls.Add(Me.keluarButton)
+        Me.GroupBox1.Controls.Add(NIKLabel)
+        Me.GroupBox1.Controls.Add(Me.editButton)
+        Me.GroupBox1.Controls.Add(Me.hapusButton)
+        Me.GroupBox1.Controls.Add(Me.refreshButton)
+        Me.GroupBox1.Controls.Add(Me.NIKTextBox)
+        Me.GroupBox1.Controls.Add(Nama_pegawaiLabel)
+        Me.GroupBox1.Controls.Add(Me.Nama_pegawaiTextBox)
+        Me.GroupBox1.Controls.Add(Me.simpanButton)
+        Me.GroupBox1.Controls.Add(Me.tambahButton)
+        Me.GroupBox1.Controls.Add(AlamatLabel)
+        Me.GroupBox1.Controls.Add(Me.AlamatTextBox)
+        Me.GroupBox1.Controls.Add(NO_HPLabel)
+        Me.GroupBox1.Controls.Add(Me.NO_HPTextBox)
+        Me.GroupBox1.Controls.Add(Keuangan_id_keuanganLabel)
+        Me.GroupBox1.Controls.Add(Me.Keuangan_id_keuanganTextBox)
+        Me.GroupBox1.Location = New System.Drawing.Point(42, 54)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(299, 278)
+        Me.GroupBox1.TabIndex = 7
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "GroupBox1"
+        '
+        'editButton
+        '
+        Me.editButton.Location = New System.Drawing.Point(14, 210)
+        Me.editButton.Name = "editButton"
+        Me.editButton.Size = New System.Drawing.Size(75, 23)
+        Me.editButton.TabIndex = 21
+        Me.editButton.Text = "EDIT"
+        Me.editButton.UseVisualStyleBackColor = True
+        '
+        'hapusButton
+        '
+        Me.hapusButton.Location = New System.Drawing.Point(212, 171)
+        Me.hapusButton.Name = "hapusButton"
+        Me.hapusButton.Size = New System.Drawing.Size(75, 23)
+        Me.hapusButton.TabIndex = 22
+        Me.hapusButton.Text = "HAPUS"
+        Me.hapusButton.UseVisualStyleBackColor = True
+        '
+        'refreshButton
+        '
+        Me.refreshButton.Location = New System.Drawing.Point(112, 210)
+        Me.refreshButton.Name = "refreshButton"
+        Me.refreshButton.Size = New System.Drawing.Size(75, 23)
+        Me.refreshButton.TabIndex = 20
+        Me.refreshButton.Text = "REFRESH"
+        Me.refreshButton.UseVisualStyleBackColor = True
+        '
+        'NIKTextBox
+        '
+        Me.NIKTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SekretariatBindingSource, "NIK", True))
+        Me.NIKTextBox.Enabled = False
+        Me.NIKTextBox.Location = New System.Drawing.Point(139, 24)
+        Me.NIKTextBox.Name = "NIKTextBox"
+        Me.NIKTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.NIKTextBox.TabIndex = 1
+        '
+        'SekretariatBindingSource
+        '
+        Me.SekretariatBindingSource.DataMember = "sekretariat"
+        Me.SekretariatBindingSource.DataSource = Me.Db_disporaDataSet
+        '
+        'Db_disporaDataSet
+        '
+        Me.Db_disporaDataSet.DataSetName = "db_disporaDataSet"
+        Me.Db_disporaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Nama_pegawaiTextBox
+        '
+        Me.Nama_pegawaiTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SekretariatBindingSource, "nama_pegawai", True))
+        Me.Nama_pegawaiTextBox.Enabled = False
+        Me.Nama_pegawaiTextBox.Location = New System.Drawing.Point(139, 50)
+        Me.Nama_pegawaiTextBox.Name = "Nama_pegawaiTextBox"
+        Me.Nama_pegawaiTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Nama_pegawaiTextBox.TabIndex = 3
+        '
+        'simpanButton
+        '
+        Me.simpanButton.Location = New System.Drawing.Point(112, 171)
+        Me.simpanButton.Name = "simpanButton"
+        Me.simpanButton.Size = New System.Drawing.Size(75, 23)
+        Me.simpanButton.TabIndex = 19
+        Me.simpanButton.Text = "SIMPAN"
+        Me.simpanButton.UseVisualStyleBackColor = True
+        '
+        'tambahButton
+        '
+        Me.tambahButton.Location = New System.Drawing.Point(13, 171)
+        Me.tambahButton.Name = "tambahButton"
+        Me.tambahButton.Size = New System.Drawing.Size(75, 23)
+        Me.tambahButton.TabIndex = 18
+        Me.tambahButton.Text = "TAMBAH"
+        Me.tambahButton.UseVisualStyleBackColor = True
+        '
+        'AlamatTextBox
+        '
+        Me.AlamatTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SekretariatBindingSource, "alamat", True))
+        Me.AlamatTextBox.Enabled = False
+        Me.AlamatTextBox.Location = New System.Drawing.Point(139, 76)
+        Me.AlamatTextBox.Name = "AlamatTextBox"
+        Me.AlamatTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.AlamatTextBox.TabIndex = 5
+        '
+        'NO_HPTextBox
+        '
+        Me.NO_HPTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SekretariatBindingSource, "NO_HP", True))
+        Me.NO_HPTextBox.Enabled = False
+        Me.NO_HPTextBox.Location = New System.Drawing.Point(139, 102)
+        Me.NO_HPTextBox.Name = "NO_HPTextBox"
+        Me.NO_HPTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.NO_HPTextBox.TabIndex = 7
+        '
+        'Keuangan_id_keuanganTextBox
+        '
+        Me.Keuangan_id_keuanganTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SekretariatBindingSource, "keuangan_id_keuangan", True))
+        Me.Keuangan_id_keuanganTextBox.Enabled = False
+        Me.Keuangan_id_keuanganTextBox.Location = New System.Drawing.Point(139, 128)
+        Me.Keuangan_id_keuanganTextBox.Name = "Keuangan_id_keuanganTextBox"
+        Me.Keuangan_id_keuanganTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Keuangan_id_keuanganTextBox.TabIndex = 9
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "keuangan_id_keuangan"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "keuangan_id_keuangan"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "NO_HP"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "NO_HP"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'cariButton
+        '
+        Me.cariButton.Location = New System.Drawing.Point(683, 51)
+        Me.cariButton.Name = "cariButton"
+        Me.cariButton.Size = New System.Drawing.Size(75, 23)
+        Me.cariButton.TabIndex = 9
+        Me.cariButton.Text = "cari"
+        Me.cariButton.UseVisualStyleBackColor = True
+        '
+        'cariText
+        '
+        Me.cariText.Location = New System.Drawing.Point(347, 54)
+        Me.cariText.Name = "cariText"
+        Me.cariText.Size = New System.Drawing.Size(330, 20)
+        Me.cariText.TabIndex = 8
+        Me.cariText.Text = "cari"
+        '
+        'SekretariatTableAdapter
+        '
+        Me.SekretariatTableAdapter.ClearBeforeFill = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "nama_pegawai"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "nama_pegawai"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "NIK"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "NIK"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'SekretariatDataGridView
+        '
+        Me.SekretariatDataGridView.AutoGenerateColumns = False
+        Me.SekretariatDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.SekretariatDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
+        Me.SekretariatDataGridView.DataSource = Me.SekretariatBindingSource
+        Me.SekretariatDataGridView.Location = New System.Drawing.Point(347, 78)
+        Me.SekretariatDataGridView.Name = "SekretariatDataGridView"
+        Me.SekretariatDataGridView.Size = New System.Drawing.Size(541, 220)
+        Me.SekretariatDataGridView.TabIndex = 6
+        '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
         'SekretariatBindingNavigator
         '
         Me.SekretariatBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
@@ -144,28 +359,9 @@ Partial Class Sekretariat
         Me.SekretariatBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.SekretariatBindingNavigator.Name = "SekretariatBindingNavigator"
         Me.SekretariatBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.SekretariatBindingNavigator.Size = New System.Drawing.Size(900, 25)
-        Me.SekretariatBindingNavigator.TabIndex = 0
+        Me.SekretariatBindingNavigator.Size = New System.Drawing.Size(947, 25)
+        Me.SekretariatBindingNavigator.TabIndex = 5
         Me.SekretariatBindingNavigator.Text = "BindingNavigator1"
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'SekretariatBindingSource
-        '
-        Me.SekretariatBindingSource.DataMember = "sekretariat"
-        Me.SekretariatBindingSource.DataSource = Me.Db_disporaDataSet
-        '
-        'Db_disporaDataSet
-        '
-        Me.Db_disporaDataSet.DataSetName = "db_disporaDataSet"
-        Me.Db_disporaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'BindingNavigatorCountItem
         '
@@ -251,202 +447,6 @@ Partial Class Sekretariat
         Me.SekretariatBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.SekretariatBindingNavigatorSaveItem.Text = "Save Data"
         '
-        'SekretariatDataGridView
-        '
-        Me.SekretariatDataGridView.AutoGenerateColumns = False
-        Me.SekretariatDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.SekretariatDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
-        Me.SekretariatDataGridView.DataSource = Me.SekretariatBindingSource
-        Me.SekretariatDataGridView.Location = New System.Drawing.Point(315, 60)
-        Me.SekretariatDataGridView.Name = "SekretariatDataGridView"
-        Me.SekretariatDataGridView.Size = New System.Drawing.Size(541, 220)
-        Me.SekretariatDataGridView.TabIndex = 1
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "NIK"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "NIK"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "nama_pegawai"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "nama_pegawai"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "alamat"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "alamat"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "NO_HP"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "NO_HP"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "keuangan_id_keuangan"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "keuangan_id_keuangan"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.batalButton)
-        Me.GroupBox1.Controls.Add(Me.keluarButton)
-        Me.GroupBox1.Controls.Add(NIKLabel)
-        Me.GroupBox1.Controls.Add(Me.editButton)
-        Me.GroupBox1.Controls.Add(Me.hapusButton)
-        Me.GroupBox1.Controls.Add(Me.refreshButton)
-        Me.GroupBox1.Controls.Add(Me.NIKTextBox)
-        Me.GroupBox1.Controls.Add(Nama_pegawaiLabel)
-        Me.GroupBox1.Controls.Add(Me.Nama_pegawaiTextBox)
-        Me.GroupBox1.Controls.Add(Me.simpanButton)
-        Me.GroupBox1.Controls.Add(Me.tambahButton)
-        Me.GroupBox1.Controls.Add(AlamatLabel)
-        Me.GroupBox1.Controls.Add(Me.AlamatTextBox)
-        Me.GroupBox1.Controls.Add(NO_HPLabel)
-        Me.GroupBox1.Controls.Add(Me.NO_HPTextBox)
-        Me.GroupBox1.Controls.Add(Keuangan_id_keuanganLabel)
-        Me.GroupBox1.Controls.Add(Me.Keuangan_id_keuanganTextBox)
-        Me.GroupBox1.Location = New System.Drawing.Point(10, 36)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(299, 278)
-        Me.GroupBox1.TabIndex = 2
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
-        '
-        'batalButton
-        '
-        Me.batalButton.Location = New System.Drawing.Point(112, 249)
-        Me.batalButton.Name = "batalButton"
-        Me.batalButton.Size = New System.Drawing.Size(75, 23)
-        Me.batalButton.TabIndex = 24
-        Me.batalButton.Text = "BATAL"
-        Me.batalButton.UseVisualStyleBackColor = True
-        '
-        'keluarButton
-        '
-        Me.keluarButton.Location = New System.Drawing.Point(212, 210)
-        Me.keluarButton.Name = "keluarButton"
-        Me.keluarButton.Size = New System.Drawing.Size(75, 23)
-        Me.keluarButton.TabIndex = 23
-        Me.keluarButton.Text = "KELUAR"
-        Me.keluarButton.UseVisualStyleBackColor = True
-        '
-        'editButton
-        '
-        Me.editButton.Location = New System.Drawing.Point(14, 210)
-        Me.editButton.Name = "editButton"
-        Me.editButton.Size = New System.Drawing.Size(75, 23)
-        Me.editButton.TabIndex = 21
-        Me.editButton.Text = "EDIT"
-        Me.editButton.UseVisualStyleBackColor = True
-        '
-        'hapusButton
-        '
-        Me.hapusButton.Location = New System.Drawing.Point(212, 171)
-        Me.hapusButton.Name = "hapusButton"
-        Me.hapusButton.Size = New System.Drawing.Size(75, 23)
-        Me.hapusButton.TabIndex = 22
-        Me.hapusButton.Text = "HAPUS"
-        Me.hapusButton.UseVisualStyleBackColor = True
-        '
-        'refreshButton
-        '
-        Me.refreshButton.Location = New System.Drawing.Point(112, 210)
-        Me.refreshButton.Name = "refreshButton"
-        Me.refreshButton.Size = New System.Drawing.Size(75, 23)
-        Me.refreshButton.TabIndex = 20
-        Me.refreshButton.Text = "REFRESH"
-        Me.refreshButton.UseVisualStyleBackColor = True
-        '
-        'NIKTextBox
-        '
-        Me.NIKTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SekretariatBindingSource, "NIK", True))
-        Me.NIKTextBox.Enabled = False
-        Me.NIKTextBox.Location = New System.Drawing.Point(139, 24)
-        Me.NIKTextBox.Name = "NIKTextBox"
-        Me.NIKTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.NIKTextBox.TabIndex = 1
-        '
-        'Nama_pegawaiTextBox
-        '
-        Me.Nama_pegawaiTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SekretariatBindingSource, "nama_pegawai", True))
-        Me.Nama_pegawaiTextBox.Enabled = False
-        Me.Nama_pegawaiTextBox.Location = New System.Drawing.Point(139, 50)
-        Me.Nama_pegawaiTextBox.Name = "Nama_pegawaiTextBox"
-        Me.Nama_pegawaiTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Nama_pegawaiTextBox.TabIndex = 3
-        '
-        'simpanButton
-        '
-        Me.simpanButton.Location = New System.Drawing.Point(112, 171)
-        Me.simpanButton.Name = "simpanButton"
-        Me.simpanButton.Size = New System.Drawing.Size(75, 23)
-        Me.simpanButton.TabIndex = 19
-        Me.simpanButton.Text = "SIMPAN"
-        Me.simpanButton.UseVisualStyleBackColor = True
-        '
-        'tambahButton
-        '
-        Me.tambahButton.Location = New System.Drawing.Point(13, 171)
-        Me.tambahButton.Name = "tambahButton"
-        Me.tambahButton.Size = New System.Drawing.Size(75, 23)
-        Me.tambahButton.TabIndex = 18
-        Me.tambahButton.Text = "TAMBAH"
-        Me.tambahButton.UseVisualStyleBackColor = True
-        '
-        'AlamatTextBox
-        '
-        Me.AlamatTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SekretariatBindingSource, "alamat", True))
-        Me.AlamatTextBox.Enabled = False
-        Me.AlamatTextBox.Location = New System.Drawing.Point(139, 76)
-        Me.AlamatTextBox.Name = "AlamatTextBox"
-        Me.AlamatTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.AlamatTextBox.TabIndex = 5
-        '
-        'NO_HPTextBox
-        '
-        Me.NO_HPTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SekretariatBindingSource, "NO_HP", True))
-        Me.NO_HPTextBox.Enabled = False
-        Me.NO_HPTextBox.Location = New System.Drawing.Point(139, 102)
-        Me.NO_HPTextBox.Name = "NO_HPTextBox"
-        Me.NO_HPTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.NO_HPTextBox.TabIndex = 7
-        '
-        'Keuangan_id_keuanganTextBox
-        '
-        Me.Keuangan_id_keuanganTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SekretariatBindingSource, "keuangan_id_keuangan", True))
-        Me.Keuangan_id_keuanganTextBox.Enabled = False
-        Me.Keuangan_id_keuanganTextBox.Location = New System.Drawing.Point(139, 128)
-        Me.Keuangan_id_keuanganTextBox.Name = "Keuangan_id_keuanganTextBox"
-        Me.Keuangan_id_keuanganTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Keuangan_id_keuanganTextBox.TabIndex = 9
-        '
-        'cariText
-        '
-        Me.cariText.Location = New System.Drawing.Point(315, 36)
-        Me.cariText.Name = "cariText"
-        Me.cariText.Size = New System.Drawing.Size(330, 20)
-        Me.cariText.TabIndex = 3
-        Me.cariText.Text = "cari"
-        '
-        'cariButton
-        '
-        Me.cariButton.Location = New System.Drawing.Point(651, 33)
-        Me.cariButton.Name = "cariButton"
-        Me.cariButton.Size = New System.Drawing.Size(75, 23)
-        Me.cariButton.TabIndex = 4
-        Me.cariButton.Text = "cari"
-        Me.cariButton.UseVisualStyleBackColor = True
-        '
-        'SekretariatTableAdapter
-        '
-        Me.SekretariatTableAdapter.ClearBeforeFill = True
-        '
         'TableAdapterManager
         '
         Me.TableAdapterManager.atletTableAdapter = Nothing
@@ -463,32 +463,52 @@ Partial Class Sekretariat
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(900, 396)
+        Me.ClientSize = New System.Drawing.Size(947, 443)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.cariButton)
         Me.Controls.Add(Me.cariText)
-        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.SekretariatDataGridView)
         Me.Controls.Add(Me.SekretariatBindingNavigator)
         Me.Name = "Sekretariat"
         Me.Text = "Sekretariat"
-        CType(Me.SekretariatBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.SekretariatBindingNavigator.ResumeLayout(False)
-        Me.SekretariatBindingNavigator.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         CType(Me.SekretariatBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Db_disporaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SekretariatDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        CType(Me.SekretariatBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SekretariatBindingNavigator.ResumeLayout(False)
+        Me.SekretariatBindingNavigator.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Db_disporaDataSet As Dispora2.db_disporaDataSet
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents batalButton As System.Windows.Forms.Button
+    Friend WithEvents keluarButton As System.Windows.Forms.Button
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents editButton As System.Windows.Forms.Button
+    Friend WithEvents hapusButton As System.Windows.Forms.Button
+    Friend WithEvents refreshButton As System.Windows.Forms.Button
+    Friend WithEvents NIKTextBox As System.Windows.Forms.TextBox
     Friend WithEvents SekretariatBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Db_disporaDataSet As Dispora2.db_disporaDataSet
+    Friend WithEvents Nama_pegawaiTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents simpanButton As System.Windows.Forms.Button
+    Friend WithEvents tambahButton As System.Windows.Forms.Button
+    Friend WithEvents AlamatTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents NO_HPTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Keuangan_id_keuanganTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents cariButton As System.Windows.Forms.Button
+    Friend WithEvents cariText As System.Windows.Forms.TextBox
     Friend WithEvents SekretariatTableAdapter As Dispora2.db_disporaDataSetTableAdapters.sekretariatTableAdapter
-    Friend WithEvents TableAdapterManager As Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents SekretariatBindingNavigator As System.Windows.Forms.BindingNavigator
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents SekretariatDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents SekretariatBindingNavigator As System.Windows.Forms.BindingNavigator
     Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
     Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
@@ -500,25 +520,5 @@ Partial Class Sekretariat
     Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents SekretariatBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents SekretariatDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents NIKTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Nama_pegawaiTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents AlamatTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents NO_HPTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Keuangan_id_keuanganTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents batalButton As System.Windows.Forms.Button
-    Friend WithEvents keluarButton As System.Windows.Forms.Button
-    Friend WithEvents editButton As System.Windows.Forms.Button
-    Friend WithEvents hapusButton As System.Windows.Forms.Button
-    Friend WithEvents refreshButton As System.Windows.Forms.Button
-    Friend WithEvents simpanButton As System.Windows.Forms.Button
-    Friend WithEvents tambahButton As System.Windows.Forms.Button
-    Friend WithEvents cariText As System.Windows.Forms.TextBox
-    Friend WithEvents cariButton As System.Windows.Forms.Button
+    Friend WithEvents TableAdapterManager As Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager
 End Class
