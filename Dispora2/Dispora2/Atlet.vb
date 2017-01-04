@@ -1,6 +1,5 @@
 ﻿Public Class Atlet
 
-    Private Sub AtletBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
         Me.AtletBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Db_disporaDataSet)
