@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-C:\Users\Acer\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.exe.config
-C:\Users\Acer\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.exe
-C:\Users\Acer\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.pdb
-C:\Users\Acer\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.xml
-C:\Users\Acer\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.Atlet.resources
-C:\Users\Acer\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.BerandaDispora.resources
-C:\Users\Acer\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.LoginDispora.resources
-C:\Users\Acer\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.Resources.resources
-C:\Users\Acer\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.vbproj.GenerateResource.Cache
-C:\Users\Acer\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.exe.licenses
-C:\Users\Acer\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.exe
-C:\Users\Acer\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.xml
-C:\Users\Acer\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.pdb
-=======
 C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.exe
 C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.pdb
 C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.xml
@@ -25,4 +10,7 @@ C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.exe
 C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.xml
 C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.pdb
 C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\bin\Debug\Dispora2.exe.config
->>>>>>> a05d7c07165d8601b4bc78a18f1df9e77aeee63a
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.CabangOlahraga.resources
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.EventKejuaraan.resources
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.Sekretariat.resources
+C:\Users\ASUS\Documents\Dispora2\Dispora2\Dispora2\obj\x86\Debug\Dispora2.Atlet.resources

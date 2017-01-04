@@ -25,6 +25,22 @@
         End If
     End Sub
 
+    Private Sub KeuanganToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles KeuanganToolStripMenuItem.Click
+        Keuangan.ShowDialog()
+    End Sub
+
+    Private Sub CabangOlahragaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CabangOlahragaToolStripMenuItem.Click
+        CabangOlahraga.ShowDialog()
+    End Sub
+
+    Private Sub EventKejuaraanToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EventKejuaraanToolStripMenuItem.Click
+        EventKejuaraan.ShowDialog()
+    End Sub
+
+    Private Sub SekretariatToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SekretariatToolStripMenuItem.Click
+        Sekretariat.ShowDialog()
+    End Sub
+
     Private Sub AtletToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AtletToolStripMenuItem.Click
         Atlet.ShowDialog()
     End Sub

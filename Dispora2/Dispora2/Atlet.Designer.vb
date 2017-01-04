@@ -37,35 +37,6 @@ Partial Class Atlet
         Me.AtletBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.AtletTableAdapter = New Dispora2.db_disporaDataSetTableAdapters.atletTableAdapter()
         Me.TableAdapterManager = New Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager()
-        Me.cariText = New System.Windows.Forms.TextBox()
-        Me.cariButton = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.batalButton = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.NIASpinEdit = New DevExpress.XtraEditors.SpinEdit()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.hapusButton = New System.Windows.Forms.Button()
-        Me.Nama_atletTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.editButton = New System.Windows.Forms.Button()
-        Me.refresButton = New System.Windows.Forms.Button()
-        Me.TTLTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Cabang_olahraga_id_olahragaSpinEdit = New DevExpress.XtraEditors.SpinEdit()
-        Me.Asal_sekolah_PTTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.Sekretariat_keuangan_id_keuanganSpinEdit = New DevExpress.XtraEditors.SpinEdit()
-        Me.AlamatTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.Sekretariat_NIKSpinEdit = New DevExpress.XtraEditors.SpinEdit()
-        Me.NO_HPSpinEdit = New DevExpress.XtraEditors.SpinEdit()
-        Me.AtletDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AtletBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
@@ -79,6 +50,36 @@ Partial Class Atlet
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.AtletBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
+        Me.AtletDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.BatalButton = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.KeluarButton = New System.Windows.Forms.Button()
+        Me.RefreshButton = New System.Windows.Forms.Button()
+        Me.NIATextBox = New System.Windows.Forms.TextBox()
+        Me.HapusButton = New System.Windows.Forms.Button()
+        Me.Nama_atletTextBox = New System.Windows.Forms.TextBox()
+        Me.EditButton = New System.Windows.Forms.Button()
+        Me.TTLTextBox = New System.Windows.Forms.TextBox()
+        Me.SimpanButton = New System.Windows.Forms.Button()
+        Me.TambahButton = New System.Windows.Forms.Button()
+        Me.Asal_sekolah_PTTextBox = New System.Windows.Forms.TextBox()
+        Me.AlamatTextBox = New System.Windows.Forms.TextBox()
+        Me.NO_HPTextBox = New System.Windows.Forms.TextBox()
+        Me.Sekretariat_NIKTextBox = New System.Windows.Forms.TextBox()
+        Me.Sekretariat_keuangan_id_keuanganTextBox = New System.Windows.Forms.TextBox()
+        Me.Cabang_olahraga_id_olahragaTextBox = New System.Windows.Forms.TextBox()
+        Me.cariButton1 = New System.Windows.Forms.Button()
+        Me.cariText1 = New System.Windows.Forms.TextBox()
         NIALabel = New System.Windows.Forms.Label()
         Nama_atletLabel = New System.Windows.Forms.Label()
         TTLLabel = New System.Windows.Forms.Label()
@@ -90,109 +91,91 @@ Partial Class Atlet
         Cabang_olahraga_id_olahragaLabel = New System.Windows.Forms.Label()
         CType(Me.Db_disporaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AtletBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        CType(Me.NIASpinEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Nama_atletTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TTLTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Cabang_olahraga_id_olahragaSpinEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Asal_sekolah_PTTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Sekretariat_keuangan_id_keuanganSpinEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AlamatTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Sekretariat_NIKSpinEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NO_HPSpinEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AtletDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AtletBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.AtletBindingNavigator.SuspendLayout()
+        CType(Me.AtletDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'NIALabel
         '
         NIALabel.AutoSize = True
-        NIALabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        NIALabel.Location = New System.Drawing.Point(8, 30)
+        NIALabel.Location = New System.Drawing.Point(6, 22)
         NIALabel.Name = "NIALabel"
-        NIALabel.Size = New System.Drawing.Size(41, 17)
-        NIALabel.TabIndex = 54
+        NIALabel.Size = New System.Drawing.Size(28, 13)
+        NIALabel.TabIndex = 0
         NIALabel.Text = "NIA:"
         '
         'Nama_atletLabel
         '
         Nama_atletLabel.AutoSize = True
-        Nama_atletLabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Nama_atletLabel.Location = New System.Drawing.Point(6, 56)
+        Nama_atletLabel.Location = New System.Drawing.Point(6, 48)
         Nama_atletLabel.Name = "Nama_atletLabel"
-        Nama_atletLabel.Size = New System.Drawing.Size(80, 17)
-        Nama_atletLabel.TabIndex = 56
+        Nama_atletLabel.Size = New System.Drawing.Size(59, 13)
+        Nama_atletLabel.TabIndex = 2
         Nama_atletLabel.Text = "nama atlet:"
         '
         'TTLLabel
         '
         TTLLabel.AutoSize = True
-        TTLLabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        TTLLabel.Location = New System.Drawing.Point(6, 82)
+        TTLLabel.Location = New System.Drawing.Point(6, 74)
         TTLLabel.Name = "TTLLabel"
-        TTLLabel.Size = New System.Drawing.Size(43, 17)
-        TTLLabel.TabIndex = 58
+        TTLLabel.Size = New System.Drawing.Size(30, 13)
+        TTLLabel.TabIndex = 4
         TTLLabel.Text = "TTL:"
         '
         'Asal_sekolah_PTLabel
         '
         Asal_sekolah_PTLabel.AutoSize = True
-        Asal_sekolah_PTLabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Asal_sekolah_PTLabel.Location = New System.Drawing.Point(6, 108)
+        Asal_sekolah_PTLabel.Location = New System.Drawing.Point(6, 100)
         Asal_sekolah_PTLabel.Name = "Asal_sekolah_PTLabel"
-        Asal_sekolah_PTLabel.Size = New System.Drawing.Size(115, 17)
-        Asal_sekolah_PTLabel.TabIndex = 60
+        Asal_sekolah_PTLabel.Size = New System.Drawing.Size(88, 13)
+        Asal_sekolah_PTLabel.TabIndex = 6
         Asal_sekolah_PTLabel.Text = "asal sekolah/PT:"
         '
         'AlamatLabel
         '
         AlamatLabel.AutoSize = True
-        AlamatLabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        AlamatLabel.Location = New System.Drawing.Point(6, 134)
+        AlamatLabel.Location = New System.Drawing.Point(6, 126)
         AlamatLabel.Name = "AlamatLabel"
-        AlamatLabel.Size = New System.Drawing.Size(55, 17)
-        AlamatLabel.TabIndex = 62
+        AlamatLabel.Size = New System.Drawing.Size(41, 13)
+        AlamatLabel.TabIndex = 8
         AlamatLabel.Text = "alamat:"
         '
         'NO_HPLabel
         '
         NO_HPLabel.AutoSize = True
-        NO_HPLabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        NO_HPLabel.Location = New System.Drawing.Point(6, 160)
+        NO_HPLabel.Location = New System.Drawing.Point(6, 152)
         NO_HPLabel.Name = "NO_HPLabel"
-        NO_HPLabel.Size = New System.Drawing.Size(61, 17)
-        NO_HPLabel.TabIndex = 64
+        NO_HPLabel.Size = New System.Drawing.Size(44, 13)
+        NO_HPLabel.TabIndex = 10
         NO_HPLabel.Text = "NO HP:"
         '
         'Sekretariat_NIKLabel
         '
         Sekretariat_NIKLabel.AutoSize = True
-        Sekretariat_NIKLabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Sekretariat_NIKLabel.Location = New System.Drawing.Point(6, 186)
+        Sekretariat_NIKLabel.Location = New System.Drawing.Point(6, 178)
         Sekretariat_NIKLabel.Name = "Sekretariat_NIKLabel"
-        Sekretariat_NIKLabel.Size = New System.Drawing.Size(118, 17)
-        Sekretariat_NIKLabel.TabIndex = 66
+        Sekretariat_NIKLabel.Size = New System.Drawing.Size(80, 13)
+        Sekretariat_NIKLabel.TabIndex = 12
         Sekretariat_NIKLabel.Text = "sekretariat NIK:"
         '
         'Sekretariat_keuangan_id_keuanganLabel
         '
         Sekretariat_keuangan_id_keuanganLabel.AutoSize = True
-        Sekretariat_keuangan_id_keuanganLabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Sekretariat_keuangan_id_keuanganLabel.Location = New System.Drawing.Point(6, 212)
+        Sekretariat_keuangan_id_keuanganLabel.Location = New System.Drawing.Point(6, 204)
         Sekretariat_keuangan_id_keuanganLabel.Name = "Sekretariat_keuangan_id_keuanganLabel"
-        Sekretariat_keuangan_id_keuanganLabel.Size = New System.Drawing.Size(235, 17)
-        Sekretariat_keuangan_id_keuanganLabel.TabIndex = 68
+        Sekretariat_keuangan_id_keuanganLabel.Size = New System.Drawing.Size(172, 13)
+        Sekretariat_keuangan_id_keuanganLabel.TabIndex = 14
         Sekretariat_keuangan_id_keuanganLabel.Text = "sekretariat keuangan id keuangan:"
         '
         'Cabang_olahraga_id_olahragaLabel
         '
         Cabang_olahraga_id_olahragaLabel.AutoSize = True
-        Cabang_olahraga_id_olahragaLabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Cabang_olahraga_id_olahragaLabel.Location = New System.Drawing.Point(6, 238)
+        Cabang_olahraga_id_olahragaLabel.Location = New System.Drawing.Point(6, 230)
         Cabang_olahraga_id_olahragaLabel.Name = "Cabang_olahraga_id_olahragaLabel"
-        Cabang_olahraga_id_olahragaLabel.Size = New System.Drawing.Size(192, 17)
-        Cabang_olahraga_id_olahragaLabel.TabIndex = 70
+        Cabang_olahraga_id_olahragaLabel.Size = New System.Drawing.Size(145, 13)
+        Cabang_olahraga_id_olahragaLabel.TabIndex = 16
         Cabang_olahraga_id_olahragaLabel.Text = "cabang olahraga id olahraga:"
         '
         'Db_disporaDataSet
@@ -220,267 +203,6 @@ Partial Class Atlet
         Me.TableAdapterManager.sekretariatTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
-        'cariText
-        '
-        Me.cariText.Location = New System.Drawing.Point(382, 98)
-        Me.cariText.Name = "cariText"
-        Me.cariText.Size = New System.Drawing.Size(343, 20)
-        Me.cariText.TabIndex = 28
-        '
-        'cariButton
-        '
-        Me.cariButton.Location = New System.Drawing.Point(731, 96)
-        Me.cariButton.Name = "cariButton"
-        Me.cariButton.Size = New System.Drawing.Size(75, 23)
-        Me.cariButton.TabIndex = 29
-        Me.cariButton.Text = "Cari"
-        Me.cariButton.UseVisualStyleBackColor = True
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.batalButton)
-        Me.GroupBox1.Controls.Add(Sekretariat_NIKLabel)
-        Me.GroupBox1.Controls.Add(NIALabel)
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.NIASpinEdit)
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Nama_atletLabel)
-        Me.GroupBox1.Controls.Add(Me.hapusButton)
-        Me.GroupBox1.Controls.Add(Me.Nama_atletTextEdit)
-        Me.GroupBox1.Controls.Add(Me.editButton)
-        Me.GroupBox1.Controls.Add(TTLLabel)
-        Me.GroupBox1.Controls.Add(Me.refresButton)
-        Me.GroupBox1.Controls.Add(Me.TTLTextEdit)
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Asal_sekolah_PTLabel)
-        Me.GroupBox1.Controls.Add(Me.Cabang_olahraga_id_olahragaSpinEdit)
-        Me.GroupBox1.Controls.Add(Me.Asal_sekolah_PTTextEdit)
-        Me.GroupBox1.Controls.Add(Cabang_olahraga_id_olahragaLabel)
-        Me.GroupBox1.Controls.Add(AlamatLabel)
-        Me.GroupBox1.Controls.Add(Me.Sekretariat_keuangan_id_keuanganSpinEdit)
-        Me.GroupBox1.Controls.Add(Me.AlamatTextEdit)
-        Me.GroupBox1.Controls.Add(Sekretariat_keuangan_id_keuanganLabel)
-        Me.GroupBox1.Controls.Add(NO_HPLabel)
-        Me.GroupBox1.Controls.Add(Me.Sekretariat_NIKSpinEdit)
-        Me.GroupBox1.Controls.Add(Me.NO_HPSpinEdit)
-        Me.GroupBox1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 79)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(363, 385)
-        Me.GroupBox1.TabIndex = 30
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "DATA ATLET"
-        '
-        'batalButton
-        '
-        Me.batalButton.Location = New System.Drawing.Point(276, 319)
-        Me.batalButton.Name = "batalButton"
-        Me.batalButton.Size = New System.Drawing.Size(75, 23)
-        Me.batalButton.TabIndex = 72
-        Me.batalButton.Text = "BATAL"
-        Me.batalButton.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(25, 278)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(93, 23)
-        Me.Button1.TabIndex = 48
-        Me.Button1.Text = "TAMBAH"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'NIASpinEdit
-        '
-        Me.NIASpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.AtletBindingSource, "NIA", True))
-        Me.NIASpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.NIASpinEdit.Location = New System.Drawing.Point(251, 30)
-        Me.NIASpinEdit.Name = "NIASpinEdit"
-        Me.NIASpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.NIASpinEdit.Size = New System.Drawing.Size(100, 20)
-        Me.NIASpinEdit.TabIndex = 55
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(136, 278)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(98, 23)
-        Me.Button2.TabIndex = 49
-        Me.Button2.Text = "SIMPAN"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'hapusButton
-        '
-        Me.hapusButton.Location = New System.Drawing.Point(251, 278)
-        Me.hapusButton.Name = "hapusButton"
-        Me.hapusButton.Size = New System.Drawing.Size(75, 23)
-        Me.hapusButton.TabIndex = 50
-        Me.hapusButton.Text = "HAPUS"
-        Me.hapusButton.UseVisualStyleBackColor = True
-        '
-        'Nama_atletTextEdit
-        '
-        Me.Nama_atletTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.AtletBindingSource, "nama_atlet", True))
-        Me.Nama_atletTextEdit.Location = New System.Drawing.Point(251, 56)
-        Me.Nama_atletTextEdit.Name = "Nama_atletTextEdit"
-        Me.Nama_atletTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Nama_atletTextEdit.TabIndex = 57
-        '
-        'editButton
-        '
-        Me.editButton.Location = New System.Drawing.Point(6, 319)
-        Me.editButton.Name = "editButton"
-        Me.editButton.Size = New System.Drawing.Size(75, 23)
-        Me.editButton.TabIndex = 51
-        Me.editButton.Text = "EDIT"
-        Me.editButton.UseVisualStyleBackColor = True
-        '
-        'refresButton
-        '
-        Me.refresButton.Location = New System.Drawing.Point(83, 319)
-        Me.refresButton.Name = "refresButton"
-        Me.refresButton.Size = New System.Drawing.Size(97, 23)
-        Me.refresButton.TabIndex = 52
-        Me.refresButton.Text = "REFRESH"
-        Me.refresButton.UseVisualStyleBackColor = True
-        '
-        'TTLTextEdit
-        '
-        Me.TTLTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.AtletBindingSource, "TTL", True))
-        Me.TTLTextEdit.Location = New System.Drawing.Point(251, 82)
-        Me.TTLTextEdit.Name = "TTLTextEdit"
-        Me.TTLTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.TTLTextEdit.TabIndex = 59
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(182, 319)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(93, 23)
-        Me.Button3.TabIndex = 53
-        Me.Button3.Text = "KELUAR"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Cabang_olahraga_id_olahragaSpinEdit
-        '
-        Me.Cabang_olahraga_id_olahragaSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.AtletBindingSource, "cabang_olahraga_id_olahraga", True))
-        Me.Cabang_olahraga_id_olahragaSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.Cabang_olahraga_id_olahragaSpinEdit.Location = New System.Drawing.Point(251, 238)
-        Me.Cabang_olahraga_id_olahragaSpinEdit.Name = "Cabang_olahraga_id_olahragaSpinEdit"
-        Me.Cabang_olahraga_id_olahragaSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.Cabang_olahraga_id_olahragaSpinEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Cabang_olahraga_id_olahragaSpinEdit.TabIndex = 71
-        '
-        'Asal_sekolah_PTTextEdit
-        '
-        Me.Asal_sekolah_PTTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.AtletBindingSource, "asal_sekolah/PT", True))
-        Me.Asal_sekolah_PTTextEdit.Location = New System.Drawing.Point(251, 108)
-        Me.Asal_sekolah_PTTextEdit.Name = "Asal_sekolah_PTTextEdit"
-        Me.Asal_sekolah_PTTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Asal_sekolah_PTTextEdit.TabIndex = 61
-        '
-        'Sekretariat_keuangan_id_keuanganSpinEdit
-        '
-        Me.Sekretariat_keuangan_id_keuanganSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.AtletBindingSource, "sekretariat_keuangan_id_keuangan", True))
-        Me.Sekretariat_keuangan_id_keuanganSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.Sekretariat_keuangan_id_keuanganSpinEdit.Location = New System.Drawing.Point(251, 212)
-        Me.Sekretariat_keuangan_id_keuanganSpinEdit.Name = "Sekretariat_keuangan_id_keuanganSpinEdit"
-        Me.Sekretariat_keuangan_id_keuanganSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.Sekretariat_keuangan_id_keuanganSpinEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Sekretariat_keuangan_id_keuanganSpinEdit.TabIndex = 69
-        '
-        'AlamatTextEdit
-        '
-        Me.AlamatTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.AtletBindingSource, "alamat", True))
-        Me.AlamatTextEdit.Location = New System.Drawing.Point(251, 134)
-        Me.AlamatTextEdit.Name = "AlamatTextEdit"
-        Me.AlamatTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.AlamatTextEdit.TabIndex = 63
-        '
-        'Sekretariat_NIKSpinEdit
-        '
-        Me.Sekretariat_NIKSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.AtletBindingSource, "sekretariat_NIK", True))
-        Me.Sekretariat_NIKSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.Sekretariat_NIKSpinEdit.Location = New System.Drawing.Point(251, 186)
-        Me.Sekretariat_NIKSpinEdit.Name = "Sekretariat_NIKSpinEdit"
-        Me.Sekretariat_NIKSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.Sekretariat_NIKSpinEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Sekretariat_NIKSpinEdit.TabIndex = 67
-        '
-        'NO_HPSpinEdit
-        '
-        Me.NO_HPSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.AtletBindingSource, "NO_HP", True))
-        Me.NO_HPSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.NO_HPSpinEdit.Location = New System.Drawing.Point(251, 160)
-        Me.NO_HPSpinEdit.Name = "NO_HPSpinEdit"
-        Me.NO_HPSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.NO_HPSpinEdit.Size = New System.Drawing.Size(100, 20)
-        Me.NO_HPSpinEdit.TabIndex = 65
-        '
-        'AtletDataGridView
-        '
-        Me.AtletDataGridView.AutoGenerateColumns = False
-        Me.AtletDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.AtletDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
-        Me.AtletDataGridView.DataSource = Me.AtletBindingSource
-        Me.AtletDataGridView.Location = New System.Drawing.Point(382, 124)
-        Me.AtletDataGridView.Name = "AtletDataGridView"
-        Me.AtletDataGridView.Size = New System.Drawing.Size(952, 305)
-        Me.AtletDataGridView.TabIndex = 30
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "NIA"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "NIA"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "nama_atlet"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "nama_atlet"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "TTL"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "TTL"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "asal_sekolah/PT"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "asal_sekolah/PT"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "alamat"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "alamat"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "NO_HP"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "NO_HP"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "sekretariat_NIK"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "sekretariat_NIK"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "sekretariat_keuangan_id_keuangan"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "sekretariat_keuangan_id_keuangan"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "cabang_olahraga_id_olahraga"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "cabang_olahraga_id_olahraga"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        '
         'AtletBindingNavigator
         '
         Me.AtletBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
@@ -495,8 +217,8 @@ Partial Class Atlet
         Me.AtletBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.AtletBindingNavigator.Name = "AtletBindingNavigator"
         Me.AtletBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.AtletBindingNavigator.Size = New System.Drawing.Size(1346, 25)
-        Me.AtletBindingNavigator.TabIndex = 31
+        Me.AtletBindingNavigator.Size = New System.Drawing.Size(1290, 25)
+        Me.AtletBindingNavigator.TabIndex = 0
         Me.AtletBindingNavigator.Text = "BindingNavigator1"
         '
         'BindingNavigatorAddNewItem
@@ -592,37 +314,288 @@ Partial Class Atlet
         Me.AtletBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.AtletBindingNavigatorSaveItem.Text = "Save Data"
         '
+        'AtletDataGridView
+        '
+        Me.AtletDataGridView.AutoGenerateColumns = False
+        Me.AtletDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.AtletDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
+        Me.AtletDataGridView.DataSource = Me.AtletBindingSource
+        Me.AtletDataGridView.Location = New System.Drawing.Point(327, 57)
+        Me.AtletDataGridView.Name = "AtletDataGridView"
+        Me.AtletDataGridView.Size = New System.Drawing.Size(951, 220)
+        Me.AtletDataGridView.TabIndex = 1
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "NIA"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "NIA"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "nama_atlet"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "nama_atlet"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "TTL"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "TTL"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "asal_sekolah/PT"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "asal_sekolah/PT"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "alamat"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "alamat"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "NO_HP"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "NO_HP"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "sekretariat_NIK"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "sekretariat_NIK"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "sekretariat_keuangan_id_keuangan"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "sekretariat_keuangan_id_keuangan"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "cabang_olahraga_id_olahraga"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "cabang_olahraga_id_olahraga"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.BatalButton)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.KeluarButton)
+        Me.GroupBox1.Controls.Add(NIALabel)
+        Me.GroupBox1.Controls.Add(Me.RefreshButton)
+        Me.GroupBox1.Controls.Add(Me.NIATextBox)
+        Me.GroupBox1.Controls.Add(Me.HapusButton)
+        Me.GroupBox1.Controls.Add(Nama_atletLabel)
+        Me.GroupBox1.Controls.Add(Me.Nama_atletTextBox)
+        Me.GroupBox1.Controls.Add(Me.EditButton)
+        Me.GroupBox1.Controls.Add(TTLLabel)
+        Me.GroupBox1.Controls.Add(Me.TTLTextBox)
+        Me.GroupBox1.Controls.Add(Me.SimpanButton)
+        Me.GroupBox1.Controls.Add(Asal_sekolah_PTLabel)
+        Me.GroupBox1.Controls.Add(Me.TambahButton)
+        Me.GroupBox1.Controls.Add(Me.Asal_sekolah_PTTextBox)
+        Me.GroupBox1.Controls.Add(AlamatLabel)
+        Me.GroupBox1.Controls.Add(Me.AlamatTextBox)
+        Me.GroupBox1.Controls.Add(NO_HPLabel)
+        Me.GroupBox1.Controls.Add(Me.NO_HPTextBox)
+        Me.GroupBox1.Controls.Add(Sekretariat_NIKLabel)
+        Me.GroupBox1.Controls.Add(Me.Sekretariat_NIKTextBox)
+        Me.GroupBox1.Controls.Add(Sekretariat_keuangan_id_keuanganLabel)
+        Me.GroupBox1.Controls.Add(Me.Sekretariat_keuangan_id_keuanganTextBox)
+        Me.GroupBox1.Controls.Add(Cabang_olahraga_id_olahragaLabel)
+        Me.GroupBox1.Controls.Add(Me.Cabang_olahraga_id_olahragaTextBox)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 28)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(304, 394)
+        Me.GroupBox1.TabIndex = 2
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "GroupBox1"
+        '
+        'BatalButton
+        '
+        Me.BatalButton.Location = New System.Drawing.Point(103, 347)
+        Me.BatalButton.Name = "BatalButton"
+        Me.BatalButton.Size = New System.Drawing.Size(75, 23)
+        Me.BatalButton.TabIndex = 28
+        Me.BatalButton.Text = "Batal"
+        Me.BatalButton.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(-2, -3)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(81, 20)
+        Me.Label1.TabIndex = 18
+        Me.Label1.Text = "Data Atlet"
+        '
+        'KeluarButton
+        '
+        Me.KeluarButton.Location = New System.Drawing.Point(175, 347)
+        Me.KeluarButton.Name = "KeluarButton"
+        Me.KeluarButton.Size = New System.Drawing.Size(75, 23)
+        Me.KeluarButton.TabIndex = 27
+        Me.KeluarButton.Text = "Keluar"
+        Me.KeluarButton.UseVisualStyleBackColor = True
+        '
+        'RefreshButton
+        '
+        Me.RefreshButton.Location = New System.Drawing.Point(32, 347)
+        Me.RefreshButton.Name = "RefreshButton"
+        Me.RefreshButton.Size = New System.Drawing.Size(75, 23)
+        Me.RefreshButton.TabIndex = 26
+        Me.RefreshButton.Text = "Refresh"
+        Me.RefreshButton.UseVisualStyleBackColor = True
+        '
+        'NIATextBox
+        '
+        Me.NIATextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AtletBindingSource, "NIA", True))
+        Me.NIATextBox.Location = New System.Drawing.Point(184, 19)
+        Me.NIATextBox.Name = "NIATextBox"
+        Me.NIATextBox.Size = New System.Drawing.Size(100, 20)
+        Me.NIATextBox.TabIndex = 1
+        '
+        'HapusButton
+        '
+        Me.HapusButton.Location = New System.Drawing.Point(175, 304)
+        Me.HapusButton.Name = "HapusButton"
+        Me.HapusButton.Size = New System.Drawing.Size(75, 23)
+        Me.HapusButton.TabIndex = 25
+        Me.HapusButton.Text = "Hapus"
+        Me.HapusButton.UseVisualStyleBackColor = True
+        '
+        'Nama_atletTextBox
+        '
+        Me.Nama_atletTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AtletBindingSource, "nama_atlet", True))
+        Me.Nama_atletTextBox.Location = New System.Drawing.Point(184, 45)
+        Me.Nama_atletTextBox.Name = "Nama_atletTextBox"
+        Me.Nama_atletTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Nama_atletTextBox.TabIndex = 3
+        '
+        'EditButton
+        '
+        Me.EditButton.Location = New System.Drawing.Point(103, 304)
+        Me.EditButton.Name = "EditButton"
+        Me.EditButton.Size = New System.Drawing.Size(75, 23)
+        Me.EditButton.TabIndex = 24
+        Me.EditButton.Text = "Edit"
+        Me.EditButton.UseVisualStyleBackColor = True
+        '
+        'TTLTextBox
+        '
+        Me.TTLTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AtletBindingSource, "TTL", True))
+        Me.TTLTextBox.Location = New System.Drawing.Point(184, 71)
+        Me.TTLTextBox.Name = "TTLTextBox"
+        Me.TTLTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.TTLTextBox.TabIndex = 5
+        '
+        'SimpanButton
+        '
+        Me.SimpanButton.Location = New System.Drawing.Point(32, 304)
+        Me.SimpanButton.Name = "SimpanButton"
+        Me.SimpanButton.Size = New System.Drawing.Size(75, 23)
+        Me.SimpanButton.TabIndex = 23
+        Me.SimpanButton.Text = "Simpan"
+        Me.SimpanButton.UseVisualStyleBackColor = True
+        '
+        'TambahButton
+        '
+        Me.TambahButton.Location = New System.Drawing.Point(103, 263)
+        Me.TambahButton.Name = "TambahButton"
+        Me.TambahButton.Size = New System.Drawing.Size(75, 23)
+        Me.TambahButton.TabIndex = 22
+        Me.TambahButton.Text = "Tambah"
+        Me.TambahButton.UseVisualStyleBackColor = True
+        '
+        'Asal_sekolah_PTTextBox
+        '
+        Me.Asal_sekolah_PTTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AtletBindingSource, "asal_sekolah/PT", True))
+        Me.Asal_sekolah_PTTextBox.Location = New System.Drawing.Point(184, 97)
+        Me.Asal_sekolah_PTTextBox.Name = "Asal_sekolah_PTTextBox"
+        Me.Asal_sekolah_PTTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Asal_sekolah_PTTextBox.TabIndex = 7
+        '
+        'AlamatTextBox
+        '
+        Me.AlamatTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AtletBindingSource, "alamat", True))
+        Me.AlamatTextBox.Location = New System.Drawing.Point(184, 123)
+        Me.AlamatTextBox.Name = "AlamatTextBox"
+        Me.AlamatTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.AlamatTextBox.TabIndex = 9
+        '
+        'NO_HPTextBox
+        '
+        Me.NO_HPTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AtletBindingSource, "NO_HP", True))
+        Me.NO_HPTextBox.Location = New System.Drawing.Point(184, 149)
+        Me.NO_HPTextBox.Name = "NO_HPTextBox"
+        Me.NO_HPTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.NO_HPTextBox.TabIndex = 11
+        '
+        'Sekretariat_NIKTextBox
+        '
+        Me.Sekretariat_NIKTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AtletBindingSource, "sekretariat_NIK", True))
+        Me.Sekretariat_NIKTextBox.Location = New System.Drawing.Point(184, 175)
+        Me.Sekretariat_NIKTextBox.Name = "Sekretariat_NIKTextBox"
+        Me.Sekretariat_NIKTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Sekretariat_NIKTextBox.TabIndex = 13
+        '
+        'Sekretariat_keuangan_id_keuanganTextBox
+        '
+        Me.Sekretariat_keuangan_id_keuanganTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AtletBindingSource, "sekretariat_keuangan_id_keuangan", True))
+        Me.Sekretariat_keuangan_id_keuanganTextBox.Location = New System.Drawing.Point(184, 201)
+        Me.Sekretariat_keuangan_id_keuanganTextBox.Name = "Sekretariat_keuangan_id_keuanganTextBox"
+        Me.Sekretariat_keuangan_id_keuanganTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Sekretariat_keuangan_id_keuanganTextBox.TabIndex = 15
+        '
+        'Cabang_olahraga_id_olahragaTextBox
+        '
+        Me.Cabang_olahraga_id_olahragaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AtletBindingSource, "cabang_olahraga_id_olahraga", True))
+        Me.Cabang_olahraga_id_olahragaTextBox.Location = New System.Drawing.Point(184, 227)
+        Me.Cabang_olahraga_id_olahragaTextBox.Name = "Cabang_olahraga_id_olahragaTextBox"
+        Me.Cabang_olahraga_id_olahragaTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Cabang_olahraga_id_olahragaTextBox.TabIndex = 17
+        '
+        'cariButton1
+        '
+        Me.cariButton1.Location = New System.Drawing.Point(667, 28)
+        Me.cariButton1.Name = "cariButton1"
+        Me.cariButton1.Size = New System.Drawing.Size(75, 23)
+        Me.cariButton1.TabIndex = 21
+        Me.cariButton1.Text = "cari"
+        Me.cariButton1.UseVisualStyleBackColor = True
+        '
+        'cariText1
+        '
+        Me.cariText1.Location = New System.Drawing.Point(393, 28)
+        Me.cariText1.Name = "cariText1"
+        Me.cariText1.Size = New System.Drawing.Size(255, 20)
+        Me.cariText1.TabIndex = 20
+        '
         'Atlet
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoScroll = True
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(1346, 476)
-        Me.Controls.Add(Me.AtletBindingNavigator)
-        Me.Controls.Add(Me.AtletDataGridView)
+        Me.ClientSize = New System.Drawing.Size(1290, 434)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.cariButton)
-        Me.Controls.Add(Me.cariText)
+        Me.Controls.Add(Me.AtletDataGridView)
+        Me.Controls.Add(Me.AtletBindingNavigator)
+        Me.Controls.Add(Me.cariText1)
+        Me.Controls.Add(Me.cariButton1)
         Me.Name = "Atlet"
-        Me.Text = "Atlet"
+        Me.Text = "ATLET"
         CType(Me.Db_disporaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AtletBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        CType(Me.NIASpinEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Nama_atletTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TTLTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Cabang_olahraga_id_olahragaSpinEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Asal_sekolah_PTTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Sekretariat_keuangan_id_keuanganSpinEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AlamatTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Sekretariat_NIKSpinEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NO_HPSpinEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AtletDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AtletBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.AtletBindingNavigator.ResumeLayout(False)
         Me.AtletBindingNavigator.PerformLayout()
+        CType(Me.AtletDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -631,35 +604,6 @@ Partial Class Atlet
     Friend WithEvents AtletBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents AtletTableAdapter As Dispora2.db_disporaDataSetTableAdapters.atletTableAdapter
     Friend WithEvents TableAdapterManager As Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents cariText As System.Windows.Forms.TextBox
-    Friend WithEvents cariButton As System.Windows.Forms.Button
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents batalButton As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents NIASpinEdit As DevExpress.XtraEditors.SpinEdit
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents hapusButton As System.Windows.Forms.Button
-    Friend WithEvents Nama_atletTextEdit As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents editButton As System.Windows.Forms.Button
-    Friend WithEvents refresButton As System.Windows.Forms.Button
-    Friend WithEvents TTLTextEdit As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Cabang_olahraga_id_olahragaSpinEdit As DevExpress.XtraEditors.SpinEdit
-    Friend WithEvents Asal_sekolah_PTTextEdit As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents Sekretariat_keuangan_id_keuanganSpinEdit As DevExpress.XtraEditors.SpinEdit
-    Friend WithEvents AlamatTextEdit As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents Sekretariat_NIKSpinEdit As DevExpress.XtraEditors.SpinEdit
-    Friend WithEvents NO_HPSpinEdit As DevExpress.XtraEditors.SpinEdit
-    Friend WithEvents AtletDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AtletBindingNavigator As System.Windows.Forms.BindingNavigator
     Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
@@ -673,4 +617,34 @@ Partial Class Atlet
     Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents AtletBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents AtletDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents NIATextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Nama_atletTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents TTLTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Asal_sekolah_PTTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents AlamatTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents NO_HPTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Sekretariat_NIKTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Sekretariat_keuangan_id_keuanganTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Cabang_olahraga_id_olahragaTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents BatalButton As System.Windows.Forms.Button
+    Friend WithEvents KeluarButton As System.Windows.Forms.Button
+    Friend WithEvents RefreshButton As System.Windows.Forms.Button
+    Friend WithEvents HapusButton As System.Windows.Forms.Button
+    Friend WithEvents EditButton As System.Windows.Forms.Button
+    Friend WithEvents SimpanButton As System.Windows.Forms.Button
+    Friend WithEvents TambahButton As System.Windows.Forms.Button
+    Friend WithEvents cariButton1 As System.Windows.Forms.Button
+    Friend WithEvents cariText1 As System.Windows.Forms.TextBox
 End Class
