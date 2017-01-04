@@ -41,7 +41,6 @@ Partial Class Sekretariat
         Me.Db_disporaDataSet = New Dispora2.db_disporaDataSet()
         Me.Nama_pegawaiTextBox = New System.Windows.Forms.TextBox()
         Me.simpanButton = New System.Windows.Forms.Button()
-        Me.tambahButton = New System.Windows.Forms.Button()
         Me.AlamatTextBox = New System.Windows.Forms.TextBox()
         Me.NO_HPTextBox = New System.Windows.Forms.TextBox()
         Me.Keuangan_id_keuanganTextBox = New System.Windows.Forms.TextBox()
@@ -67,6 +66,7 @@ Partial Class Sekretariat
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.SekretariatBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.TableAdapterManager = New Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager()
+        Me.tambahButton = New System.Windows.Forms.Button()
         NIKLabel = New System.Windows.Forms.Label()
         Nama_pegawaiLabel = New System.Windows.Forms.Label()
         AlamatLabel = New System.Windows.Forms.Label()
@@ -243,15 +243,6 @@ Partial Class Sekretariat
         Me.simpanButton.TabIndex = 19
         Me.simpanButton.Text = "SIMPAN"
         Me.simpanButton.UseVisualStyleBackColor = True
-        '
-        'tambahButton
-        '
-        Me.tambahButton.Location = New System.Drawing.Point(13, 171)
-        Me.tambahButton.Name = "tambahButton"
-        Me.tambahButton.Size = New System.Drawing.Size(75, 23)
-        Me.tambahButton.TabIndex = 18
-        Me.tambahButton.Text = "TAMBAH"
-        Me.tambahButton.UseVisualStyleBackColor = True
         '
         'AlamatTextBox
         '
@@ -458,6 +449,15 @@ Partial Class Sekretariat
         Me.TableAdapterManager.sekretariatTableAdapter = Me.SekretariatTableAdapter
         Me.TableAdapterManager.UpdateOrder = Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
+        'tambahButton
+        '
+        Me.tambahButton.Location = New System.Drawing.Point(13, 171)
+        Me.tambahButton.Name = "tambahButton"
+        Me.tambahButton.Size = New System.Drawing.Size(75, 23)
+        Me.tambahButton.TabIndex = 18
+        Me.tambahButton.Text = "TAMBAH"
+        Me.tambahButton.UseVisualStyleBackColor = True
+        '
         'Sekretariat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -495,7 +495,6 @@ Partial Class Sekretariat
     Friend WithEvents Db_disporaDataSet As Dispora2.db_disporaDataSet
     Friend WithEvents Nama_pegawaiTextBox As System.Windows.Forms.TextBox
     Friend WithEvents simpanButton As System.Windows.Forms.Button
-    Friend WithEvents tambahButton As System.Windows.Forms.Button
     Friend WithEvents AlamatTextBox As System.Windows.Forms.TextBox
     Friend WithEvents NO_HPTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Keuangan_id_keuanganTextBox As System.Windows.Forms.TextBox
@@ -521,4 +520,5 @@ Partial Class Sekretariat
     Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents SekretariatBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents TableAdapterManager As Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents tambahButton As System.Windows.Forms.Button
 End Class

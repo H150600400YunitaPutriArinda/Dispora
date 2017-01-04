@@ -58,7 +58,6 @@ Partial Class Keuangan
         Me.BatalButton = New System.Windows.Forms.Button()
         Me.KeluarButton = New System.Windows.Forms.Button()
         Me.RefreshButton = New System.Windows.Forms.Button()
-        Me.HapusButton = New System.Windows.Forms.Button()
         Me.EditButton = New System.Windows.Forms.Button()
         Me.SimpanButton = New System.Windows.Forms.Button()
         Me.TambahButton = New System.Windows.Forms.Button()
@@ -71,6 +70,7 @@ Partial Class Keuangan
         Me.cariButton1 = New System.Windows.Forms.Button()
         Me.cariText1 = New System.Windows.Forms.TextBox()
         Me.CariButton = New System.Windows.Forms.Button()
+        Me.HapusButton = New System.Windows.Forms.Button()
         Id_keuanganLabel = New System.Windows.Forms.Label()
         Gaji_karyawanLabel = New System.Windows.Forms.Label()
         Gaji_atletLabel = New System.Windows.Forms.Label()
@@ -377,15 +377,6 @@ Partial Class Keuangan
         Me.RefreshButton.Text = "Refresh"
         Me.RefreshButton.UseVisualStyleBackColor = True
         '
-        'HapusButton
-        '
-        Me.HapusButton.Location = New System.Drawing.Point(160, 246)
-        Me.HapusButton.Name = "HapusButton"
-        Me.HapusButton.Size = New System.Drawing.Size(75, 23)
-        Me.HapusButton.TabIndex = 15
-        Me.HapusButton.Text = "Hapus"
-        Me.HapusButton.UseVisualStyleBackColor = True
-        '
         'EditButton
         '
         Me.EditButton.Location = New System.Drawing.Point(88, 246)
@@ -486,6 +477,15 @@ Partial Class Keuangan
         Me.CariButton.Text = "Cari"
         Me.CariButton.UseVisualStyleBackColor = True
         '
+        'HapusButton
+        '
+        Me.HapusButton.Location = New System.Drawing.Point(160, 246)
+        Me.HapusButton.Name = "HapusButton"
+        Me.HapusButton.Size = New System.Drawing.Size(75, 23)
+        Me.HapusButton.TabIndex = 15
+        Me.HapusButton.Text = "Hapus"
+        Me.HapusButton.UseVisualStyleBackColor = True
+        '
         'Keuangan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -544,7 +544,6 @@ Partial Class Keuangan
     Friend WithEvents Perlengkapan_kantorTextBox As System.Windows.Forms.TextBox
     Friend WithEvents KeluarButton As System.Windows.Forms.Button
     Friend WithEvents RefreshButton As System.Windows.Forms.Button
-    Friend WithEvents HapusButton As System.Windows.Forms.Button
     Friend WithEvents EditButton As System.Windows.Forms.Button
     Friend WithEvents SimpanButton As System.Windows.Forms.Button
     Friend WithEvents TambahButton As System.Windows.Forms.Button
@@ -552,4 +551,5 @@ Partial Class Keuangan
     Friend WithEvents cariText1 As System.Windows.Forms.TextBox
     Friend WithEvents BatalButton As System.Windows.Forms.Button
     Friend WithEvents CariButton As System.Windows.Forms.Button
+    Friend WithEvents HapusButton As System.Windows.Forms.Button
 End Class
