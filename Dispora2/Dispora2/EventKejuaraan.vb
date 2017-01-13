@@ -86,4 +86,13 @@
     Private Sub RefreshButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RefreshButton.Click
         Me.Event_kejuaraanTableAdapter.Fill(Me.Db_disporaDataSet.event_kejuaraan)
     End Sub
+
+    Private Sub cariButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cariButton1.Click
+        Event_kejuaraanTableAdapter.cariQuery(Db_disporaDataSet.event_kejuaraan, "%" & cariText1.Text & "%")
+    End Sub
+
+    Private Sub cariText1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cariText1.TextChanged
+        Event_kejuaraanTableAdapter.cariQuery(Db_disporaDataSet.event_kejuaraan, "%" & cariText1.Text & "%")
+    End Sub
+
 End Class

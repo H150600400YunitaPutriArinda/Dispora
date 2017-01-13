@@ -30,10 +30,6 @@ Partial Class Keuangan
         Dim Pengeluaran_atletLabel As System.Windows.Forms.Label
         Dim Perlengkapan_kantorLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Keuangan))
-        Me.Db_disporaDataSet = New Dispora2.db_disporaDataSet()
-        Me.KeuanganBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.KeuanganTableAdapter = New Dispora2.db_disporaDataSetTableAdapters.keuanganTableAdapter()
-        Me.TableAdapterManager = New Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager()
         Me.KeuanganBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
@@ -48,16 +44,11 @@ Partial Class Keuangan
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.KeuanganBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.KeuanganDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.BatalButton = New System.Windows.Forms.Button()
         Me.KeluarButton = New System.Windows.Forms.Button()
         Me.RefreshButton = New System.Windows.Forms.Button()
+        Me.HapusButton = New System.Windows.Forms.Button()
         Me.EditButton = New System.Windows.Forms.Button()
         Me.SimpanButton = New System.Windows.Forms.Button()
         Me.TambahButton = New System.Windows.Forms.Button()
@@ -70,19 +61,28 @@ Partial Class Keuangan
         Me.cariButton1 = New System.Windows.Forms.Button()
         Me.cariText1 = New System.Windows.Forms.TextBox()
         Me.CariButton = New System.Windows.Forms.Button()
-        Me.HapusButton = New System.Windows.Forms.Button()
+        Me.KeuanganBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Db_disporaDataSet = New Dispora2.db_disporaDataSet()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.KeuanganTableAdapter = New Dispora2.db_disporaDataSetTableAdapters.keuanganTableAdapter()
+        Me.TableAdapterManager = New Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager()
         Id_keuanganLabel = New System.Windows.Forms.Label()
         Gaji_karyawanLabel = New System.Windows.Forms.Label()
         Gaji_atletLabel = New System.Windows.Forms.Label()
         Pemasukan_kejuaraanLabel = New System.Windows.Forms.Label()
         Pengeluaran_atletLabel = New System.Windows.Forms.Label()
         Perlengkapan_kantorLabel = New System.Windows.Forms.Label()
-        CType(Me.Db_disporaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.KeuanganBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KeuanganBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KeuanganBindingNavigator.SuspendLayout()
         CType(Me.KeuanganDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.KeuanganBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Db_disporaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Id_keuanganLabel
@@ -93,6 +93,7 @@ Partial Class Keuangan
         Id_keuanganLabel.Size = New System.Drawing.Size(69, 13)
         Id_keuanganLabel.TabIndex = 0
         Id_keuanganLabel.Text = "id keuangan:"
+        AddHandler Id_keuanganLabel.Click, AddressOf Me.Id_keuanganLabel_Click
         '
         'Gaji_karyawanLabel
         '
@@ -138,31 +139,6 @@ Partial Class Keuangan
         Perlengkapan_kantorLabel.Size = New System.Drawing.Size(108, 13)
         Perlengkapan_kantorLabel.TabIndex = 10
         Perlengkapan_kantorLabel.Text = "perlengkapan kantor:"
-        '
-        'Db_disporaDataSet
-        '
-        Me.Db_disporaDataSet.DataSetName = "db_disporaDataSet"
-        Me.Db_disporaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'KeuanganBindingSource
-        '
-        Me.KeuanganBindingSource.DataMember = "keuangan"
-        Me.KeuanganBindingSource.DataSource = Me.Db_disporaDataSet
-        '
-        'KeuanganTableAdapter
-        '
-        Me.KeuanganTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.atletTableAdapter = Nothing
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.cabang_olahragaTableAdapter = Nothing
-        Me.TableAdapterManager.event_kejuaraan_has_cabang_olahragaTableAdapter = Nothing
-        Me.TableAdapterManager.event_kejuaraanTableAdapter = Nothing
-        Me.TableAdapterManager.keuanganTableAdapter = Me.KeuanganTableAdapter
-        Me.TableAdapterManager.sekretariatTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'KeuanganBindingNavigator
         '
@@ -286,42 +262,6 @@ Partial Class Keuangan
         Me.KeuanganDataGridView.Size = New System.Drawing.Size(661, 358)
         Me.KeuanganDataGridView.TabIndex = 1
         '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "id_keuangan"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "id_keuangan"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "gaji_karyawan"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "gaji_karyawan"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "gaji_atlet"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "gaji_atlet"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "pemasukan_kejuaraan"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "pemasukan_kejuaraan"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "pengeluaran_atlet"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "pengeluaran_atlet"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "perlengkapan_kantor"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "perlengkapan_kantor"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.BatalButton)
@@ -376,6 +316,15 @@ Partial Class Keuangan
         Me.RefreshButton.TabIndex = 16
         Me.RefreshButton.Text = "Refresh"
         Me.RefreshButton.UseVisualStyleBackColor = True
+        '
+        'HapusButton
+        '
+        Me.HapusButton.Location = New System.Drawing.Point(160, 246)
+        Me.HapusButton.Name = "HapusButton"
+        Me.HapusButton.Size = New System.Drawing.Size(75, 23)
+        Me.HapusButton.TabIndex = 15
+        Me.HapusButton.Text = "Hapus"
+        Me.HapusButton.UseVisualStyleBackColor = True
         '
         'EditButton
         '
@@ -477,14 +426,66 @@ Partial Class Keuangan
         Me.CariButton.Text = "Cari"
         Me.CariButton.UseVisualStyleBackColor = True
         '
-        'HapusButton
+        'KeuanganBindingSource
         '
-        Me.HapusButton.Location = New System.Drawing.Point(160, 246)
-        Me.HapusButton.Name = "HapusButton"
-        Me.HapusButton.Size = New System.Drawing.Size(75, 23)
-        Me.HapusButton.TabIndex = 15
-        Me.HapusButton.Text = "Hapus"
-        Me.HapusButton.UseVisualStyleBackColor = True
+        Me.KeuanganBindingSource.DataMember = "keuangan"
+        Me.KeuanganBindingSource.DataSource = Me.Db_disporaDataSet
+        '
+        'Db_disporaDataSet
+        '
+        Me.Db_disporaDataSet.DataSetName = "db_disporaDataSet"
+        Me.Db_disporaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "id_keuangan"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "id_keuangan"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "gaji_karyawan"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "gaji_karyawan"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "gaji_atlet"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "gaji_atlet"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "pemasukan_kejuaraan"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "pemasukan_kejuaraan"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "pengeluaran_atlet"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "pengeluaran_atlet"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "perlengkapan_kantor"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "perlengkapan_kantor"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'KeuanganTableAdapter
+        '
+        Me.KeuanganTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.atletTableAdapter = Nothing
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.cabang_olahragaTableAdapter = Nothing
+        Me.TableAdapterManager.event_kejuaraan_has_cabang_olahragaTableAdapter = Nothing
+        Me.TableAdapterManager.event_kejuaraanTableAdapter = Nothing
+        Me.TableAdapterManager.keuanganTableAdapter = Me.KeuanganTableAdapter
+        Me.TableAdapterManager.sekretariatTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'Keuangan
         '
@@ -499,14 +500,14 @@ Partial Class Keuangan
         Me.Controls.Add(Me.KeuanganBindingNavigator)
         Me.Name = "Keuangan"
         Me.Text = "KEUANGAN"
-        CType(Me.Db_disporaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.KeuanganBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KeuanganBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.KeuanganBindingNavigator.ResumeLayout(False)
         Me.KeuanganBindingNavigator.PerformLayout()
         CType(Me.KeuanganDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.KeuanganBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Db_disporaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

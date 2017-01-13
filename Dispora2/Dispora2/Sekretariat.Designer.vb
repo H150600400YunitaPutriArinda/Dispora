@@ -41,6 +41,7 @@ Partial Class Sekretariat
         Me.Db_disporaDataSet = New Dispora2.db_disporaDataSet()
         Me.Nama_pegawaiTextBox = New System.Windows.Forms.TextBox()
         Me.simpanButton = New System.Windows.Forms.Button()
+        Me.tambahButton = New System.Windows.Forms.Button()
         Me.AlamatTextBox = New System.Windows.Forms.TextBox()
         Me.NO_HPTextBox = New System.Windows.Forms.TextBox()
         Me.Keuangan_id_keuanganTextBox = New System.Windows.Forms.TextBox()
@@ -66,7 +67,6 @@ Partial Class Sekretariat
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.SekretariatBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.TableAdapterManager = New Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager()
-        Me.tambahButton = New System.Windows.Forms.Button()
         NIKLabel = New System.Windows.Forms.Label()
         Nama_pegawaiLabel = New System.Windows.Forms.Label()
         AlamatLabel = New System.Windows.Forms.Label()
@@ -244,6 +244,15 @@ Partial Class Sekretariat
         Me.simpanButton.Text = "SIMPAN"
         Me.simpanButton.UseVisualStyleBackColor = True
         '
+        'tambahButton
+        '
+        Me.tambahButton.Location = New System.Drawing.Point(13, 171)
+        Me.tambahButton.Name = "tambahButton"
+        Me.tambahButton.Size = New System.Drawing.Size(75, 23)
+        Me.tambahButton.TabIndex = 18
+        Me.tambahButton.Text = "TAMBAH"
+        Me.tambahButton.UseVisualStyleBackColor = True
+        '
         'AlamatTextBox
         '
         Me.AlamatTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SekretariatBindingSource, "alamat", True))
@@ -298,7 +307,6 @@ Partial Class Sekretariat
         Me.cariText.Name = "cariText"
         Me.cariText.Size = New System.Drawing.Size(330, 20)
         Me.cariText.TabIndex = 8
-        Me.cariText.Text = "cari"
         '
         'SekretariatTableAdapter
         '
@@ -448,15 +456,6 @@ Partial Class Sekretariat
         Me.TableAdapterManager.keuanganTableAdapter = Nothing
         Me.TableAdapterManager.sekretariatTableAdapter = Me.SekretariatTableAdapter
         Me.TableAdapterManager.UpdateOrder = Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'tambahButton
-        '
-        Me.tambahButton.Location = New System.Drawing.Point(13, 171)
-        Me.tambahButton.Name = "tambahButton"
-        Me.tambahButton.Size = New System.Drawing.Size(75, 23)
-        Me.tambahButton.TabIndex = 18
-        Me.tambahButton.Text = "TAMBAH"
-        Me.tambahButton.UseVisualStyleBackColor = True
         '
         'Sekretariat
         '

@@ -50,6 +50,8 @@ Partial Class EventKejuaraan
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Event_kejuaraanDataGridView = New System.Windows.Forms.DataGridView()
+        Me.cariButton1 = New System.Windows.Forms.Button()
+        Me.cariText1 = New System.Windows.Forms.TextBox()
         Id_eventLabel = New System.Windows.Forms.Label()
         Nama_eventLabel = New System.Windows.Forms.Label()
         WaktuLabel = New System.Windows.Forms.Label()
@@ -63,7 +65,6 @@ Partial Class EventKejuaraan
         'Id_eventLabel
         '
         Id_eventLabel.AutoSize = True
-        Id_eventLabel.Enabled = False
         Id_eventLabel.Location = New System.Drawing.Point(19, 25)
         Id_eventLabel.Name = "Id_eventLabel"
         Id_eventLabel.Size = New System.Drawing.Size(48, 13)
@@ -73,7 +74,6 @@ Partial Class EventKejuaraan
         'Nama_eventLabel
         '
         Nama_eventLabel.AutoSize = True
-        Nama_eventLabel.Enabled = False
         Nama_eventLabel.Location = New System.Drawing.Point(19, 51)
         Nama_eventLabel.Name = "Nama_eventLabel"
         Nama_eventLabel.Size = New System.Drawing.Size(66, 13)
@@ -83,7 +83,6 @@ Partial Class EventKejuaraan
         'WaktuLabel
         '
         WaktuLabel.AutoSize = True
-        WaktuLabel.Enabled = False
         WaktuLabel.Location = New System.Drawing.Point(19, 78)
         WaktuLabel.Name = "WaktuLabel"
         WaktuLabel.Size = New System.Drawing.Size(39, 13)
@@ -93,7 +92,6 @@ Partial Class EventKejuaraan
         'TempatLabel
         '
         TempatLabel.AutoSize = True
-        TempatLabel.Enabled = False
         TempatLabel.Location = New System.Drawing.Point(19, 103)
         TempatLabel.Name = "TempatLabel"
         TempatLabel.Size = New System.Drawing.Size(42, 13)
@@ -295,12 +293,30 @@ Partial Class EventKejuaraan
         Me.Event_kejuaraanDataGridView.Size = New System.Drawing.Size(443, 341)
         Me.Event_kejuaraanDataGridView.TabIndex = 4
         '
+        'cariButton1
+        '
+        Me.cariButton1.Location = New System.Drawing.Point(689, 36)
+        Me.cariButton1.Name = "cariButton1"
+        Me.cariButton1.Size = New System.Drawing.Size(75, 23)
+        Me.cariButton1.TabIndex = 9
+        Me.cariButton1.Text = "cari"
+        Me.cariButton1.UseVisualStyleBackColor = True
+        '
+        'cariText1
+        '
+        Me.cariText1.Location = New System.Drawing.Point(427, 36)
+        Me.cariText1.Name = "cariText1"
+        Me.cariText1.Size = New System.Drawing.Size(255, 20)
+        Me.cariText1.TabIndex = 8
+        '
         'EventKejuaraan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(918, 455)
+        Me.Controls.Add(Me.cariButton1)
+        Me.Controls.Add(Me.cariText1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Event_kejuaraanDataGridView)
@@ -337,4 +353,6 @@ Partial Class EventKejuaraan
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Event_kejuaraanDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents cariButton1 As System.Windows.Forms.Button
+    Friend WithEvents cariText1 As System.Windows.Forms.TextBox
 End Class

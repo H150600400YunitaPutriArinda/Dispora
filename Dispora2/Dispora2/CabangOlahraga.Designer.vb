@@ -53,6 +53,8 @@ Partial Class CabangOlahraga
         Me.TableAdapterManager = New Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager()
         Me.Cabang_olahragaDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cariButton1 = New System.Windows.Forms.Button()
+        Me.cariText1 = New System.Windows.Forms.TextBox()
         Id_olahragaLabel = New System.Windows.Forms.Label()
         Nama_olahragaLabel = New System.Windows.Forms.Label()
         KelasLabel = New System.Windows.Forms.Label()
@@ -67,7 +69,6 @@ Partial Class CabangOlahraga
         'Id_olahragaLabel
         '
         Id_olahragaLabel.AutoSize = True
-        Id_olahragaLabel.Enabled = False
         Id_olahragaLabel.Location = New System.Drawing.Point(28, 39)
         Id_olahragaLabel.Name = "Id_olahragaLabel"
         Id_olahragaLabel.Size = New System.Drawing.Size(62, 13)
@@ -77,7 +78,6 @@ Partial Class CabangOlahraga
         'Nama_olahragaLabel
         '
         Nama_olahragaLabel.AutoSize = True
-        Nama_olahragaLabel.Enabled = False
         Nama_olahragaLabel.Location = New System.Drawing.Point(28, 65)
         Nama_olahragaLabel.Name = "Nama_olahragaLabel"
         Nama_olahragaLabel.Size = New System.Drawing.Size(80, 13)
@@ -87,7 +87,6 @@ Partial Class CabangOlahraga
         'KelasLabel
         '
         KelasLabel.AutoSize = True
-        KelasLabel.Enabled = False
         KelasLabel.Location = New System.Drawing.Point(28, 91)
         KelasLabel.Name = "KelasLabel"
         KelasLabel.Size = New System.Drawing.Size(35, 13)
@@ -97,7 +96,6 @@ Partial Class CabangOlahraga
         'Kelompok_usiaLabel
         '
         Kelompok_usiaLabel.AutoSize = True
-        Kelompok_usiaLabel.Enabled = False
         Kelompok_usiaLabel.Location = New System.Drawing.Point(28, 117)
         Kelompok_usiaLabel.Name = "Kelompok_usiaLabel"
         Kelompok_usiaLabel.Size = New System.Drawing.Size(78, 13)
@@ -107,7 +105,6 @@ Partial Class CabangOlahraga
         'Nama_induk_organisasiLabel
         '
         Nama_induk_organisasiLabel.AutoSize = True
-        Nama_induk_organisasiLabel.Enabled = False
         Nama_induk_organisasiLabel.Location = New System.Drawing.Point(28, 143)
         Nama_induk_organisasiLabel.Name = "Nama_induk_organisasiLabel"
         Nama_induk_organisasiLabel.Size = New System.Drawing.Size(115, 13)
@@ -326,12 +323,30 @@ Partial Class CabangOlahraga
         Me.DataGridViewTextBoxColumn1.HeaderText = "id_olahraga"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         '
+        'cariButton1
+        '
+        Me.cariButton1.Location = New System.Drawing.Point(653, 12)
+        Me.cariButton1.Name = "cariButton1"
+        Me.cariButton1.Size = New System.Drawing.Size(75, 23)
+        Me.cariButton1.TabIndex = 9
+        Me.cariButton1.Text = "cari"
+        Me.cariButton1.UseVisualStyleBackColor = True
+        '
+        'cariText1
+        '
+        Me.cariText1.Location = New System.Drawing.Point(391, 12)
+        Me.cariText1.Name = "cariText1"
+        Me.cariText1.Size = New System.Drawing.Size(255, 20)
+        Me.cariText1.TabIndex = 8
+        '
         'CabangOlahraga
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(947, 462)
+        Me.Controls.Add(Me.cariButton1)
+        Me.Controls.Add(Me.cariText1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Cabang_olahragaDataGridView)
@@ -370,4 +385,6 @@ Partial Class CabangOlahraga
     Friend WithEvents TableAdapterManager As Dispora2.db_disporaDataSetTableAdapters.TableAdapterManager
     Friend WithEvents Cabang_olahragaDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents cariButton1 As System.Windows.Forms.Button
+    Friend WithEvents cariText1 As System.Windows.Forms.TextBox
 End Class

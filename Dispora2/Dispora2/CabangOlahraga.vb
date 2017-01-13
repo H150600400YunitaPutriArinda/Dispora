@@ -10,6 +10,7 @@
         Nama_olahragaTextBox.Enabled = True
         KelasTextBox.Enabled = True
         Kelompok_usiaTextBox.Enabled = True
+        Nama_induk_organisasiTextBox.Enabled = True
 
         TambahButton.Enabled = False
         HapusButton.Enabled = False
@@ -22,7 +23,7 @@
     End Sub
 
     Private Sub SimpanButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SimpanButton.Click
-        Me.vaildate()
+        Me.Validate()
         Me.Cabang_olahragaBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Db_disporaDataSet)
 
@@ -32,25 +33,23 @@
         Nama_olahragaTextBox.Enabled = False
         KelasTextBox.Enabled = False
         Kelompok_usiaTextBox.Enabled = False
+        Nama_induk_organisasiTextBox.Enabled = False
 
         TambahButton.Enabled = True
         HapusButton.Enabled = True
         EditButton.Enabled = True
         SimpanButton.Enabled = False
     End Sub
-
-    Private Sub vaildate()
-        Throw New NotImplementedException
-    End Sub
-
     Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
 
     End Sub
 
     Private Sub EditButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditButton.Click
+        Id_olahragaTextBox.Enabled = True
         Nama_olahragaTextBox.Enabled = True
         KelasTextBox.Enabled = True
         Kelompok_usiaTextBox.Enabled = True
+        Nama_induk_organisasiTextBox.Enabled = True
 
         TambahButton.Enabled = False
         HapusButton.Enabled = False
@@ -64,7 +63,7 @@
         If MessageBox.Show("Hapus Data?", "konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
             Cabang_olahragaBindingSource.RemoveCurrent()
 
-            Me.vaildate()
+            Me.Validate()
             Me.Cabang_olahragaBindingSource.EndEdit()
             Me.TableAdapterManager.UpdateAll(Me.Db_disporaDataSet)
 
@@ -86,4 +85,13 @@
         SimpanButton.Enabled = False
         BatalButton.Enabled = False
     End Sub
+
+    Private Sub cariButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cariButton1.Click
+        Cabang_olahragaTableAdapter.cariQuery(Db_disporaDataSet.cabang_olahraga, "%" & cariText1.Text & "%")
+    End Sub
+
+    Private Sub cariText1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cariText1.TextChanged
+        Cabang_olahragaTableAdapter.cariQuery(Db_disporaDataSet.cabang_olahraga, "%" & cariText1.Text & "%")
+    End Sub
+
 End Class
